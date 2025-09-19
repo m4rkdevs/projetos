@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>DevMarco - Portfólio</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">DevMarco</a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#portfolio" class="nav-link">Projetos</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="highlight" id="typingText">Bem vindo, Me chamo Marco!</span>
+                </h1>
+                <p class="hero-subtitle">Desenvolvedor FullStack & QA Specialist</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="cta-btn primary">Ver Projetos</a>
+                    <a href="#contact" class="cta-btn secondary">Contato</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Mim</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <p>Gostaria de compartilhar um pouco sobre minha jornada profissional e acadêmica.</p>
+                    </div>
+                    <div class="about-details">
+                        <p>Formado em 2025 em Análise e Desenvolvimento de Sistemas, tenho experiência em suporte de TI (níveis N1 e N2) e atualmente estou me especializando na área de QA por meio de cursos específicos.</p>
+                        
+                        <p>Iniciei minha carreira na área administrativa, o que me trouxe uma base sólida em organização e processos, mas foi na tecnologia que encontrei minha verdadeira paixão.</p>
+                        
+                        <p>Desde então, atuei com desenvolvimento de websites como freelancer, suporte técnico e também com projetos de análise de dados usando ferramentas como Power BI.</p>
+                        
+                        <p>Estou em constante evolução, buscando aprimorar minhas habilidades e contribuir com soluções eficientes na área de tecnologia.</p>
+                    </div>
+                </div>
+                <div class="specialties">
+                    <div class="specialty-card" data-specialty="development">
+                        <div class="specialty-icon">💻</div>
+                        <h3 class="specialty-title">Desenvolvimento</h3>
+                        <p class="specialty-description">Desenvolvimento de websites e aplicações web usando tecnologias modernas como HTML, CSS, JavaScript e frameworks.</p>
+                        <div class="specialty-tech">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                        </div>
+                    </div>
+                    
+                    <div class="specialty-card" data-specialty="support">
+                        <div class="specialty-icon">🛠️</div>
+                        <h3 class="specialty-title">Analista de Suporte</h3>
+                        <p class="specialty-description">Experiência em suporte técnico N1 e N2, resolução de problemas e atendimento ao cliente com foco em soluções eficientes.</p>
+                        <div class="specialty-tech">
+                            <span>Suporte N1/N2</span>
+                            <span>Troubleshooting</span>
+                            <span>Help Desk</span>
+                        </div>
+                    </div>
+                    
+                    <div class="specialty-card" data-specialty="qa">
+                        <div class="specialty-icon">🔍</div>
+                        <h3 class="specialty-title">QA Testing</h3>
+                        <p class="specialty-description">Especialização em testes de qualidade, automação com Cypress e garantia de qualidade em softwares e aplicações.</p>
+                        <div class="specialty-tech">
+                            <span>Cypress</span>
+                            <span>Testes Automatizados</span>
+                            <span>QA Manual</span>
+                        </div>
+                    </div>
+                    
+                    <div class="specialty-card" data-specialty="data">
+                        <div class="specialty-icon">📊</div>
+                        <h3 class="specialty-title">Analista de Dados</h3>
+                        <p class="specialty-description">Análise e visualização de dados usando Power BI, criação de dashboards e relatórios para tomada de decisões.</p>
+                        <div class="specialty-tech">
+                            <span>Power BI</span>
+                            <span>Dashboards</span>
+                            <span>Análise de Dados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meus Projetos</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Confira alguns dos meus trabalhos mais recentes</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&h=300&fit=crop" alt="Testes Automatizados">
+                        <div class="project-overlay">
+                            <a href="https://youtu.be/wfOxGmOL1Yw" class="project-link" target="_blank">Ver Projeto</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Testes Automatizados</h3>
+                        <p class="project-tech">Cypress</p>
+                        <p class="project-description">Projeto em Cypress, onde é possível fazer testes de login, responsividade e todas as suas funcionalidades com o usuário e o back-end ou front-end, identificando possíveis erros em softwares.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop" alt="Análise de Dados PowerBI">
+                        <div class="project-overlay">
+                            <a href="https://youtu.be/ia4_xLh4iVY" class="project-link" target="_blank">Ver Projeto</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Análise de Dados</h3>
+                        <p class="project-tech">Power BI</p>
+                        <p class="project-description">Processo que demonstra uma análise para RH referente ao local de trabalho, onde são realizadas entrevistas e analisados cargos, salários, empresa e nível de satisfação durante os anos.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&h=300&fit=crop" alt="Academia">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">Ver Projeto</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Site Academia</h3>
+                        <p class="project-tech">HTML, CSS, JavaScript</p>
+                        <p class="project-description">Site completo para academia com informações sobre aulas, musculação e todos os tipos de atividades. Design moderno e responsivo.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=500&h=300&fit=crop" alt="Barbearia">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">Ver Projeto</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Site Barbearia</h3>
+                        <p class="project-tech">HTML, CSS, JavaScript</p>
+                        <p class="project-description">Site elegante para barbearia, destacando serviços profissionais em um mercado que está sempre crescendo e necessitando de bons profissionais.</p>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&h=300&fit=crop" alt="Restaurante">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">Ver Projeto</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Site Restaurante</h3>
+                        <p class="project-tech">HTML, CSS, JavaScript</p>
+                        <p class="project-description">Site completo para restaurante com cardápio digital, sistema de reservas e galeria. Perfect para estabelecimentos que querem se destacar no mercado gastronômico.</p>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop" alt="Dashboard Analytics">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">Ver Projeto</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Dashboard Analytics</h3>
+                        <p class="project-tech">React, D3.js</p>
+                        <p class="project-description">Dashboard interativo para análise de dados em tempo real com gráficos dinâmicos e métricas de performance empresarial.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Vamos Trabalhar Juntos?</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Entre em contato comigo para discutir seu próximo projeto</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:marko.rodrigues1@gmail.com">marko.rodrigues1@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/+5551983143583">+55 51 98314-3583</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Localização</h4>
+                            <span>Rio Grande do Sul, Brasil</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Seu email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Assunto" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 DevMarco. Todos os direitos reservados.</p>
+                    <p>Desenvolvido com ❤️ por Marco Rodrigues</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com" target="_blank" class="social-link">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+                    </a>
+                    <a href="https://facebook.com" target="_blank" class="social-link">
+                        <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook">
+                    </a>
+                    <a href="https://wa.me/+5551983143583" target="_blank" class="social-link">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174879.png" alt="WhatsApp">
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-link">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+        <span>↑</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
