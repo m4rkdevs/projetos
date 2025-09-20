@@ -6,7 +6,7 @@
 }
 
 :root {
-    --primary-bg: #313131d3;
+    --primary-bg: #292828e0;
     --secondary-bg: #292828e0;
     --card-bg: #252525;
     --text-primary: #ffffff;
@@ -17,8 +17,8 @@
     --accent-green: #10b981;
     --accent-orange: #d38704;
     --border-color: #1d1d1d;
-    --shadow: 0 4px 6px rgba(0, 0, 0, );
-    --shadow-lg: 0 10px 25px rgb(7, 7, 7);
+    --shadow: 0 4px 6px rgb(10, 10, 10);
+    --shadow-lg: 0 10px 25px rgb(129, 128, 128);
 }
 
 html {
