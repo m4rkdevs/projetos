@@ -6,19 +6,19 @@
 }
 
 :root {
-    --primary-bg: #0f0f0f;
-    --secondary-bg: #1a1a1a;
+    --primary-bg: #313131d3;
+    --secondary-bg: #292828e0;
     --card-bg: #252525;
     --text-primary: #ffffff;
-    --text-secondary: #b0b0b0;
-    --text-muted: #808080;
-    --accent-blue: #3b82f6;
-    --accent-purple: #8b5cf6;
+    --text-secondary: #ebebeb;
+    --text-muted: #cecece;
+    --accent-blue: #4300FF;
+    --accent-purple: #00FFDE;
     --accent-green: #10b981;
-    --accent-orange: #f59e0b;
-    --border-color: #333333;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.4);
+    --accent-orange: #d38704;
+    --border-color: #1d1d1d;
+    --shadow: 0 4px 6px rgba(0, 0, 0, );
+    --shadow-lg: 0 10px 25px rgb(7, 7, 7);
 }
 
 html {
@@ -120,7 +120,7 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(15, 15, 15, 0.9);
+    background: rgba(32, 32, 32, 0.76);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
 }
