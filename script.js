@@ -2,8 +2,7 @@
 function initTypingEffect() {
     const textElement = document.getElementById('typing-text');
     const cursorElement = document.querySelector('.typing-cursor');
-    const text = 'Sou Marco !'
-    
+    const text = 'Sou Marco !';
     
     // Hide text initially
     textElement.textContent = '';
@@ -35,11 +34,28 @@ document.addEventListener('DOMContentLoaded', function() {
     const navMenu = document.getElementById('nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
 
-    // Mobile menu toggle
-    navToggle.addEventListener('click', function() {
-        navMenu.classList.toggle('active');
-        navToggle.classList.toggle('active');
-    });
+    // Mobile menu toggle with better error handling
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+            
+            // Update ARIA attributes for accessibility
+            const isOpen = navMenu.classList.contains('active');
+            navToggle.setAttribute('aria-expanded', isOpen);
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }
 
     // Close mobile menu when clicking on a link
     navLinks.forEach(link => {
