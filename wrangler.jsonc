@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "01995fe9-8d6f-7e39-97c7-747b0245c184",
+  "name": "01996492-b241-7742-8ed1-9074051eccb5",
   "main": "./src/worker/index.ts",
   "compatibility_date": "2025-06-17",
   "compatibility_flags": ["nodejs_compat"],
@@ -14,8 +14,8 @@
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "01995fe9-8d6f-7e39-97c7-747b0245c184",
-      "database_id": "01995fe9-8d6f-7e39-97c7-747b0245c184",
+      "database_name": "01996492-b241-7742-8ed1-9074051eccb5",
+      "database_id": "01996492-b241-7742-8ed1-9074051eccb5",
     },
   ],
 }
