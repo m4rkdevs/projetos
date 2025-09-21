@@ -833,6 +833,7 @@ body {
 
     .nav-container {
         padding: 0.5rem 0.75rem;
+        padding-right: 55px;
     }
 
     .nav-brand {
@@ -843,11 +844,13 @@ body {
         min-width: 40px;
         min-height: 40px;
         padding: 0.375rem;
+       
     }
 
     .nav-toggle span {
         width: 20px;
         height: 2px;
+        
     }
 
     .hero-title {
