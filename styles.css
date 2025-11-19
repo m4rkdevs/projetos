@@ -177,6 +177,7 @@ body {
     flex-direction: column;
     cursor: pointer;
     gap: 0.25rem;
+    right: 35px;
 }
 
 .nav-toggle span {
@@ -741,6 +742,7 @@ body {
 
     .nav-toggle {
         display: flex;
+        
     }
 
     .nav-toggle.active span:nth-child(1) {
