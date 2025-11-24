@@ -537,9 +537,7 @@
     </footer>
 
     <script src="script.js"></script>
-
-</body>
-<script>
+    <script>
     (function () {
         const domain = encodeURIComponent(window.location.hostname);
         const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -587,7 +585,8 @@
                 }
             })
             .catch(error => console.error('Error:', error));
-    })();
+            })();
 </script>
+</body>
 
 </html>
